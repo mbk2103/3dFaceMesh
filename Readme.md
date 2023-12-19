@@ -13,6 +13,7 @@ pip install mediapipe opencv-python
 ```
 Usage
 Import the necessary libraries and execute the provided Python script:
+```bash
 # Import necessary libraries
 import cv2
 import mediapipe as mp
@@ -21,7 +22,7 @@ from google.colab import drive
 import time
 
 # ... (rest of the code)
-
+```
 Ensure that you have Google Colab installed to run the code interactively.
 
 The FaceMeshProcessor class is the core component of the Face Mesh algorithm. It provides methods for processing both images and videos, drawing Face Mesh overlays, and handling input/output.
@@ -33,7 +34,7 @@ The FaceMeshProcessor class is the core component of the Face Mesh algorithm. It
 - process_image(): Process image input and display the output.
 
 ## Example Usage
-
+```bash
 # Mount Google Drive
 drive.mount('/content/drive')
 # Define input and output paths
@@ -43,7 +44,7 @@ if __name__ == "__main__":
 
     # Create FaceMeshProcessor instance and process input
     face_mesh_processor = FaceMeshProcessor(input_source, output_file)
-
+```
 Replace the input_source and output_file variables with your desired paths.
 
 Feel free to customize the script according to your needs and contribute to the improvement of the Face Mesh algorithm.
